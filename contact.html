@@ -5,12 +5,17 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- The meta tag for responsiveness is commented out, to minimize use of media queries -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
   <!-- Bootstrap core CSS -->
   <link href="assets\css\bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for sticky footer -->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- Custom styles -->
   <link href="assets\css\style.css" rel="stylesheet">
 
   <title>Bootstrap Portfolio</title>
@@ -18,42 +23,90 @@
 
 <body>
   <!-- Static navbar -->
-  <nav class="navbar navbar-default navbar-static-top">
-
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-
       <div class="navbar-header">
-
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-          aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Chris Zoghby</a>
-
+        <a class="navbar-brand">Chris Zoghby</a>
       </div>
 
-      <div id="navbar" class="navbar-collapse collapse">
+      <div id="navbar">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active">
+          <li>
             <a href="index.html">About</a>
           </li>
           <li>
             <a href="portfolio.html">Portfolio</a>
           </li>
-          <li>
+          <li class="active">
             <a href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
-      <!--/.nav-collapse -->
     </div>
   </nav>
 
   <div class="container">
-    
+    <div class="page-header">
+      <h1>Contact</h1>
+    </div>
+    <!-- First Row -->
+    <div class="row">
+      <!-- 8 Column Span in First Row -->
+      <div class="col-xs-8">
+        <!-- Subrow Within the 8 columns for form-->
+        <div class="row">
+          <div class="col-xs-12">
+            <form action="mailto:cgzoghby@gmail.com" method="post" enctype="text/plain">
+              <div class="form-group">
+                <label for="exampleInputName1">Name</label>
+                <input type="text" class="form-control" id="exampleInputName1" placeholder="John Smith">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@gmail.com">
+              </div>
+              <label>Message</label>
+              <textarea class="form-control" rows="10"></textarea>
+              <div class="form-group top-buffer">
+                <div class="col-xs-12">
+                  <input type="submit" value="Submit" class="btn btn-default">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- end subrows -->
+      </div>
+      <!-- 4 Column Span in First Row for contact -->
+      <div class="col-xs-3 col-xs-offset-1">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Contact Me</h3>
+          </div>
+          <div class="panel-body">
+            <!-- Creating a new sub-row inside the body with which to display the links -->
+            <div class="row">
+              <div class="col-xs-4">
+                <a href="https://github.com/CGZoghby">
+                  <img class="img-responsive" src="assets/images/if_github_square_black_107109.png" alt="githubLink">
+                </a>
+              </div>
+              <div class="col-xs-4">
+                <a href="https://www.linkedin.com/in/christopherzoghby/">
+                  <img class="img-responsive" src="assets/images/if_linkedin_square_color_107091.png" alt="linkedin">
+                </a>
+              </div>
+              <div class="col-xs-4">
+                <a href="https://stackoverflow.com/users/9185333/christopher-zoghby?tab=profile">
+                  <img class="img-responsive" id="stack_jerk_icon" src="assets/images/if_overflow_334695.png" alt="stackoverflow" height="36"
+                    width="36">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <footer class="footer">
@@ -63,4 +116,4 @@
   </footer>
 </body>
 
-</html>
+</html> -->

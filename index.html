@@ -5,37 +5,31 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- The meta tag for responsiveness is commented out, to minimize use of media queries -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
   <!-- Bootstrap core CSS -->
   <link href="assets\css\bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for sticky footer -->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- Custom styles -->
   <link href="assets\css\style.css" rel="stylesheet">
 
   <title>Bootstrap Portfolio</title>
 </head>
 
 <body>
-  <!-- Static navbar -->
-  <nav class="navbar navbar-default navbar-static-top">
-
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-
       <div class="navbar-header">
-
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-          aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Chris Zoghby</a>
-
+        <a class="navbar-brand">Chris Zoghby</a>
       </div>
 
-      <div id="navbar" class="navbar-collapse collapse">
+      <div id="navbar">
         <ul class="nav navbar-nav navbar-right">
           <li class="active">
             <a href="index.html">About</a>
@@ -48,65 +42,30 @@
           </li>
         </ul>
       </div>
-      <!--/.nav-collapse -->
     </div>
   </nav>
+  <!-- End navbar -->
 
   <div class="container">
+    <div class="page-header">
+      <h1>About Me</h1>
+    </div>
     <!-- First Row -->
     <div class="row">
       <!-- 8 Column Span in First Row -->
-      <div class="col-md-8">
-        <div class="page-header">
-          <h1>About Me</h1>
-        </div>
-      </div>
-      <!-- 4 Column Span in First Row -->
-      <!-- This is where contact links go -->
-      <div class="col-md-4">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Contact Me</h3>
-          </div>
-          <div class="panel-body">
-            <!-- Creating a new sub-row inside the body with which to display the links -->
-            <div class="row">
-              <div class="col-md-4">
-                <a href="https://github.com/CGZoghby">
-                  <img class="img-responsive" src="assets/images/if_github_square_black_107109.png" alt="githubLink">
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="https://www.linkedin.com/in/christopherzoghby/">
-                  <img class="img-responsive" src="assets/images/if_linkedin_square_color_107091.png" alt="linkedin">
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="https://stackoverflow.com/users/9185333/christopher-zoghby?tab=profile">
-                  <img class="img-responsive" src="assets/images/if_overflow_334695.png" alt="stackoverflow">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- 2nd Row -->
-    <div class="row">
-      <!-- 8 Column Span in Second Row -->
-      <div class="col-md-8">
-        <!-- New Sub-row inside 2nd Row's 8-column span, requiring a new set of 12 columns -->
+      <div class="col-xs-8">
+        <!-- Subrow Within the 8 columns -->
         <div class="row">
-          <!-- 3-column span inside the sub-row -->
-          <div class="col-md-3">
+          <!-- 3 Column Span in Sub Row For the Picture -->
+          <div class="col-xs-3">
             <!-- Personal Photo Add -->
             <img id="bio_image" class="img-responsive" src="assets/images/Personal_Photo.png" alt="Personal_Picture">
           </div>
-          <!-- 9-column span that fills out the sub-row -->
-          <div class="col-md-9">
+          <!-- 9 column span for the paragraph content -->
+          <div class="col-xs-9">
             <p> I exited undergraduate (at the beautiful and excellent College of William and Mary) with a physics degree and
-              a passion for interdisciplinary studies. I love modeling emergent, and self-organizing, phenomena in nature.
-              Statistical mechanics studies as a whole are all fascinating.
+              a passion for interdisciplinary studies. I love modeling emergent, self-organizing, phenomena in nature, and
+              statistical mechanics studies are all fascinating.
             </p>
             <p>
               Physics wired my brain for problem solving and I've been recently enjoying applying that to the IT field. Coding and web
@@ -119,10 +78,35 @@
             </p>
           </div>
         </div>
+        <!-- end subrow -->
       </div>
-      <!-- 4 column span of...empty space? But I want to define it as empty for completeness -->
-      <div class="col-md-4">
-        <!-- Hey I'm empty -->
+      <!-- 4 Column Span to fill out First Row -->
+      <div class="col-xs-3 col-xs-offset-1">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Contact Me</h3>
+          </div>
+          <div class="panel-body">
+            <!-- Creating a new sub-row inside the body with which to display the links -->
+            <div class="row">
+              <div class="col-xs-4">
+                <a href="https://github.com/CGZoghby">
+                  <img class="img-responsive" src="assets/images/if_github_square_black_107109.png" alt="githubLink">
+                </a>
+              </div>
+              <div class="col-xs-4">
+                <a href="https://www.linkedin.com/in/christopherzoghby/">
+                  <img class="img-responsive" src="assets/images/if_linkedin_square_color_107091.png" alt="linkedin">
+                </a>
+              </div>
+              <div class="col-xs-4">
+                <a href="https://stackoverflow.com/users/9185333/christopher-zoghby?tab=profile">
+                  <img class="img-responsive" id="stack_jerk_icon" src="assets/images/if_overflow_334695.png" alt="stackoverflow" height="36" width="36">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -134,4 +118,4 @@
   </footer>
 </body>
 
-</html>
+</html> -->
